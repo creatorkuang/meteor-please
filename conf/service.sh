@@ -1,7 +1,7 @@
 #!/bin/bash
 #chkconfig:345 99 01
 #description:<%= appName %>
-NODE_ENTRY='/home/<%= appName %>/bundle/main.js'
+NODE_ENTRY='/opt/<%= appName %>/bundle/main.js'
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 NODE_PATH='/usr/local/lib/node_modules'
 NODE=/usr/local/bin/node
