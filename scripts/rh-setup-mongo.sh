@@ -3,5 +3,5 @@
 # install mongodb & mongodb-server
 sudo yum install -y mongodb*
 # mongodb daemon
-sudo systemctl enable mongod
-sudo systemctl start mongod
+sudo chkconfig --level 3 mongod on
+sudo service mongod start

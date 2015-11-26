@@ -6,7 +6,7 @@ var Please = require('../lib/please');
 var Help = require('../lib/helpers');
 var fs = require('fs');
 
-console.log('\n\n\tmeteor-please\n\tSimple Meteor Deployment for RHEL/CentOS 7+\n\n'.bold.green);
+console.log('Simple Meteor Deployment for CentOS 6+\n\n'.bold.green);
 
 var cmd = process.argv[2];
 var current_dir = path.resolve('.');

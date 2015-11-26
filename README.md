@@ -1,25 +1,24 @@
-# meteor-please
+# meteor-please for centos 6
 [![npm version](https://badge.fury.io/js/mplz.svg)](http://badge.fury.io/js/mplz)
-### Simple Meteor Deployment for RHEL/CentOS 7+
-Deploy your Meteor app on RHEL flavoured boxes via SSH, and keep your apps alive with __systemd__. Your app is served through reverse proxy by __nginx__. This is a deployment tool that I personally use in production, based on [meteor-up](https://github.com/arunoda/meteor-up). If you encounter any bugs or have a feature request, please post an issue. (SSL is implemented but not tested thoroughly yet)
+### Simple Meteor Deployment for CentOS 6+
 
 ## Installation
 ````
-npm install -g mplz
+npm install -g mplzc6
 ````
 
 ## Usage
 ##### 1. Initialise
 Simply run in your Meteor project's directory:
 ````
-mplz
+mplzc6
 ````
 You'll get a prompt to automatically configure a `mplz.json` for your project.
 
 ##### 2. Setup Your Environment
 Once you've got a configuration file, you can spin up your server, then use this command inside your project directory to install the production environment (nodejs, mongodb, nginx):
 ````
-mplz setup
+mplzc6 setup
 ````
 
 Now go grab a coffee, because it will probably take some time for all the things to install.
@@ -27,7 +26,7 @@ Now go grab a coffee, because it will probably take some time for all the things
 ##### 3. Deploy Your App
 After the server setup is done, you can run this command to deploy your app:
 ````
-mplz deploy
+mplzc6 deploy
 ````
 
 Easy!

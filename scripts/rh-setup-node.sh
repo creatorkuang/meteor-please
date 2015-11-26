@@ -8,3 +8,6 @@ sudo npm install -g n
 <% } else { %>
 	sudo n 0.10.36
 <% } %>
+
+#set up pm2
+sudo npm install -g pm2

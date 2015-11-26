@@ -1,7 +1,7 @@
 {
-  "name": "mplz",
-  "version": "0.1.14",
-  "description": "Simple Meteor Deployment for RHEL/CentOS 7+",
+  "name": "mup-centos-6",
+  "version": "0.0.1",
+  "description": "Simple Meteor Deployment for CentOS 6+",
   "dependencies": {
     "nodemiral-forcetty": "0.4.x",
     "colors": "0.3.x",
@@ -12,11 +12,11 @@
     "jsonfile": "2.0.0"
   },
   "bin": {
-    "mplz": "./bin/mplz"
+    "mplz": "./bin/mplzc6"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hellstad/meteor-please.git"
+    "url": "git://github.com/creatorkuang/meteor-please.git"
   },
   "keywords": [
     "mplz",
@@ -26,6 +26,6 @@
     "rhel",
     "fedora"
   ],
-  "author": "Kevin van Guldenaar <kevin@kevincharm.com>",
+  "author": "Weipeng Kuang <creatorkuang@gmail.com>",
   "license": "MIT"
 }

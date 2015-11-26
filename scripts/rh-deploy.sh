@@ -1,6 +1,5 @@
 #!/bin/bash
-
-sudo systemctl stop <%= appName %>.service
+sudo service <%= appName %> stop
 sudo chown -R <%= appUser %> <%= appRemoteTargetPath %>
 su <%= appUser %>
 cd <%= appRemoteTargetPath %>
@@ -15,6 +14,6 @@ npm install
 exit
 
 # restart daemon
-sudo systemctl daemon-reload
-sudo systemctl enable <%= appName %>.service
-sudo systemctl start <%= appName %>.service
+sudo chkconfig <%= appName %> –add
+sudo chkconfig --level 3 <%= appName %> on
+sudo service <%= appName %> start
