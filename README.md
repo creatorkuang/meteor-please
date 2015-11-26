@@ -32,21 +32,21 @@ mplzc6 deploy
 Easy!
 
 ## Commands
-__mplz init__ Reconfigures your app's `mplz.json` settings file.
+__mplzc6 init__ Reconfigures your app's `mplz.json` settings file.
 
-__mplz setup__ Sets up your server according to your `mplz.json` settings.
+__mplzc6 setup__ Sets up your server according to your `mplz.json` settings.
 
-__mplz deploy__ Deploys your app according to your `mplz.json` settings.
+__mplzc6 deploy__ Deploys your app according to your `mplz.json` settings.
 
-__mplz reconfig__ Apply any configuration changes if your `mplz.json` has been modified since last setup.
+__mplzc6 reconfig__ Apply any configuration changes if your `mplz.json` has been modified since last setup.
 
-__mplz start__ Starts your app. (systemd)
+__mplzc6 start__ Starts your app. (systemd)
 
-__mplz stop__ Stops your app. (systemd)
+__mplzc6 stop__ Stops your app. (systemd)
 
-__mplz restart__ Restarts your app. (systemd)
+__mplzc6 restart__ Restarts your app. (systemd)
 
-__mplz delete__ Deletes your app from the deployment directory.
+__mplzc6 delete__ Deletes your app from the deployment directory.
 
 ## TODOs
 - SSL
