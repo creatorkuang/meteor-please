@@ -22,7 +22,8 @@
   "app": ".",
 
   "env": {
-    "ROOT_URL": "http://127.0.0.1"
+    "ROOT_URL": "http://127.0.0.1",
+    "PORT":"3000"
   },
 
   "deployCheckWaitTime": 15

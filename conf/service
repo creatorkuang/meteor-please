@@ -2,13 +2,14 @@
 #chkconfig:345 99 01
 #description:<%= appName %>
 NODE_ENTRY='/opt/<%= appName %>/bundle/main.js'
+SETTINGS_ENTRY='/opt/<%= appName %>/settings.json'
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 NODE_PATH='/usr/local/lib/node_modules'
 NODE=/usr/local/bin/node
 
 test -x $NODE || exit 0
 function start_app {
-	ROOT_URL=<%= appRootUrl %> PORT=<%= appPort %> NODE_ENV=production METEOR_SETTINGS=<%- appEnv %> forever start --uid <%= appName %> $NODE_ENTRY 
+	MONGO_URL=<%= appMongoUrl %>  ROOT_URL=<%= appRootUrl %> PORT=<%= appPort %> NODE_ENV=production METEOR_SETTINGS=$(cat $SETTINGS_ENTRY) forever start --uid <%= appName %> $NODE_ENTRY 
 }
 function stop_app {
 	forever stop <%= appName %>
