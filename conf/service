@@ -8,7 +8,7 @@ NODE=/usr/local/bin/node
 
 test -x $NODE || exit 0
 function start_app {
-	ROOT_URL=<%= appRootUrl %> PORT=<%= appPort %> NODE_ENV=production METEOR_SETTINGS=<%- appEnv %> pm2 start $NODE_ENTRY -i 2 --name <%= appName %> -f
+	ROOT_URL=<%= appRootUrl %> PORT=<%= appPort %> NODE_ENV=production METEOR_SETTINGS=<%- appEnv %> forever start $NODE_ENTRY --name <%= appName %>
 }
 function stop_app {
 	pm2 kill <%= appName %>

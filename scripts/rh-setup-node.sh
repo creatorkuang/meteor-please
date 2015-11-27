@@ -9,5 +9,5 @@ sudo npm install -g n
 	sudo n 0.10.36
 <% } %>
 
-#set up pm2
-sudo npm install -g pm2
+#set up forever
+sudo npm install -g forever
