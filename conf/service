@@ -8,10 +8,10 @@ NODE=/usr/local/bin/node
 
 test -x $NODE || exit 0
 function start_app {
-	ROOT_URL=<%= appRootUrl %> PORT=<%= appPort %> NODE_ENV=production METEOR_SETTINGS=<%- appEnv %> forever start $NODE_ENTRY --name <%= appName %>
+	ROOT_URL=<%= appRootUrl %> PORT=<%= appPort %> NODE_ENV=production METEOR_SETTINGS=<%- appEnv %> forever start --uid <%= appName %> $NODE_ENTRY 
 }
 function stop_app {
-	pm2 kill <%= appName %>
+	forever stop <%= appName %>
 }
 case $1 in
 start)
