@@ -14,6 +14,7 @@ npm install
 exit
 
 # restart daemon
+sudo chmod 755 <%= appName %>
 sudo chkconfig –-add <%= appName %> 
 sudo chkconfig --level 3 <%= appName %> on
 sudo service <%= appName %> start
