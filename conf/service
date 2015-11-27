@@ -9,7 +9,7 @@ NODE=/usr/local/bin/node
 
 test -x $NODE || exit 0
 function start_app {
-	MONGO_URL=<%= appMongoUrl %>  ROOT_URL=<%= appRootUrl %> PORT=<%= appPort %> NODE_ENV=production METEOR_SETTINGS=$(cat $SETTINGS_ENTRY) forever start --uid <%= appName %> $NODE_ENTRY 
+	MONGO_URL=<%= appMongoUrl %>  ROOT_URL=<%= appRootUrl %> PORT=<%= appPort %> NODE_ENV=production METEOR_SETTINGS=$(cat $SETTINGS_ENTRY) forever start --uid <%= appName %> -a $NODE_ENTRY 
 }
 function stop_app {
 	forever stop <%= appName %>
