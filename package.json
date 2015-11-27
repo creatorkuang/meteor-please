@@ -1,6 +1,6 @@
 {
   "name": "mplzc6",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Simple Meteor Deployment for CentOS 6+",
   "dependencies": {
     "nodemiral-forcetty": "0.4.x",
